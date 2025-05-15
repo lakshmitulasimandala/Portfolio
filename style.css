@@ -1,0 +1,152 @@
+body {
+    background-color: #987f62; 
+    background-size: cover;
+    color: #333;
+}
+.card-container {
+    background-color: #5f5141;
+    color: #D8D2C2;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center; 
+    width: 40vh;
+    height: 50vh;
+}
+
+.card-header {
+    background-color: #323f4b; /* Earthy color */
+    color: white;
+    font-weight: bold;
+}
+.my_image {
+    width: 35vh; /* Adjust size as needed */
+    height: 50vh; /* Adjust size as needed */
+}
+.image_container {
+    width: 100%; /* Changed to 100% for responsiveness */
+    height: auto; /* Changed to auto for responsiveness */
+    display: flex;
+    justify-content: center; /* Center the card */
+    padding: 20px; /* Added padding */
+}
+
+.card {
+    background-color: #d8cfc2;
+    width: 100%; /* Full width of the container */
+    max-width: 800px; /* Maximum width for larger screens */
+    border: none; /* No border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    overflow: hidden; /* Hide overflow for rounded corners */
+    transition: transform 1.0s; /* Smooth transition for hover effect */
+    height: 400px;
+    margin-bottom: 25px;
+}
+
+.card-body {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+
+.my_image {
+    border-radius: 10%; /* Circular image */
+    width: 30vh; /* Adjust size as needed */
+    height: 40vh; /* Adjust size as needed */
+    transition: transform 0.5s; /* Smooth transition for zoom effect */
+}
+
+.card:hover .my_image {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+.know-more-btn {
+    border: 2px solid #473932;
+    background: transparent;
+    color: #473932;
+    padding: 5px 15px;
+    font-size: 14px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.know-more-btn:hover {
+    background: #473932;
+    color: #FAF7F0;
+}
+
+.know-more-btn:active,
+.know-more-btn:focus {
+    background: #FAF7F0; /* Change background color on click */
+    color: #473932; /* Change text color on click */
+    outline: none; /* Remove outline */
+}
+
+.cv-btn {
+    background: #473932;
+    color: #FAF7F0;
+    padding: 5px 15px;
+    font-size: 14px;
+    border: none;
+    transition: background 0.3s;
+    border-radius: 10px;
+}
+
+.cv-btn:hover {
+    background: #5a4a3a; /* Darker shade on hover */
+}
+
+
+.cv-btn:active,
+.cv-btn:focus {
+    background: #FAF7F0; /* Change background color on click */
+    color: #473932; /* Change text color on click */
+    outline: none; /* Remove outline */
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start invisible */
+        transform: translateY(20px); /* Start slightly lower */
+    }
+    100% {
+        opacity: 1; /* End fully visible */
+        transform: translateY(0); /* End at original position */
+    }
+}
+
+.animated-banner {
+    color: #473932;
+    font-size: 133px;
+    font-weight: bold;
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Add some margin */
+    animation: fadeIn 1s ease forwards; /* Apply the fade-in animation */
+}
+
+.about-container {
+    border-radius: 10px; /* Rounded corners */
+    padding: 3px; /* Padding around the text */
+    margin: 20px; /* Center the container */
+    
+}
+.about-container h6 {
+    color: #473932; /* Color for the subtitle */
+    margin-bottom: 10px; /* Space below the subtitle */
+    margin-top: 20px;
+}
+
+.about-container h1 {
+    color: #4A4947; /* Color for the main title */
+    margin-bottom: 20px; /* Space below the title */
+    
+}
+
+.about {
+    color: #333; /* Text color */
+    line-height: 1.6; /* Improved line height for readability */
+    font-family: futura;
+    font-size: 20px;
+}
